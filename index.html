@@ -12,7 +12,7 @@
         <a class='header__link' href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </header>
     <main class="main">
-        <section class="main__section new-task" id='topSectionForAddingElementToList'>
+        <section class="main__section new-task">
             <h3 class="main__header">Add Item</h3>
             <div class="new-task__wrapper">
                 <input id='new-task' class="new-task__input task" type="text">
@@ -21,7 +21,7 @@
         </section>
         <sectiom class="main__todo"> 
             <h3 class="main__header">Todo</h3>
-            <ul id='incompleteTasks' class="main__todo-list tasklist">
+            <ul class="main__todo-list tasklist">
                 <li class="tasklist__item">
                     <input type='checkbox' class="tasklist__checkbox">
                     <label class="tasklist__label">Pay Bills</label>
@@ -42,14 +42,19 @@
                 </li>
             </ul>
         </sectiom>
-        
-            
-
-
-<h3>Completed</h3><ul id="completed-tasks"><li><input type="checkbox" checked><label class="task">See the Doctor</label><input type="text" class="task"><button class="edit">Edit</button><button class="delete"><img src="./remove.svg"></button>
-</li>
-</ul>
-
+        <section class="main__complete">
+            <h3 class="main__header">Completed</h3>
+            <ul class="main__complete-list tasklist">
+              <li class="tasklist__item">
+                <input class="tasklist__checkbox" type="checkbox" checked><label class="tasklist__label">See the Doctor</label>
+                <input type="text" class="tasklist__input task">
+                <button class="tasklist__btn btn btn-text">Edit</button>
+                <button class="tasklist__btn btn btn-image">
+                    <img class="btn-img" src="./remove.svg" alt="Remove">
+                </button>
+              </li>
+            </ul>
+        </section>
     </main>
 
 <script type="text/javascript" SRC="app.js"></script>
