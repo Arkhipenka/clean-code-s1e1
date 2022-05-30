@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.body {
     background-color: #f8f8f8;
     color: #333;
     font-family: Lato, sans-serif;
@@ -26,7 +26,9 @@ body {
     display: block;
     width: 500px;
     margin: 0 auto 0;
+    padding-top: 16px;
 }
+.tasklist__label, 
 .task {
     width: 56%;
     display: inline-block;
@@ -35,14 +37,16 @@ body {
 .new-task__wrapper {
     display: flex;
 }
-ul {
+.tasklist {
     margin:0;
     padding: 0px;
 }
-li, h3 {
+.tasklist__item {
     list-style:none;
 }
-input, .btn{
+.task,
+.tasklist__checkbox,
+.btn{
     outline:none;
 }
 .btn {
@@ -79,7 +83,7 @@ input, .btn{
     font-family: Lato, sans-serif;
     color: #888;
 }
-input[type="text"]:focus {
+.task:focus {
     color: #333;
 }
 
@@ -90,7 +94,7 @@ input[type="text"]:focus {
 }
 
 /* Task list */
-li {
+.tasklist__item {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
@@ -99,47 +103,47 @@ li {
     justify-content: space-between;
     align-items: center;
 }
-li > * {
+.tasklist__item > * {
     vertical-align: middle;
 }
 
-li > input[type="checkbox"] {
+.tasklist__checkbox {
     margin: 0 10px;
 }
-li > label {
+.tasklist__label {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
 }
-li >    input[type="text"] {
+.tasklist__input {
     width: 226px
 }
-button.delete img {
+.btn-img img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
-button.delete img:hover {
+.button__img:hover {
     transform: rotateZ(0);
-}
-
-/* Completed */
-ul#completed-tasks label {
+  }
+  
+  /* Completed */
+  .main__complete_list .tasklist__label {
     text-decoration: line-through;
-     color: #888;
-}
-
-/* Edit Task */
-ul li input[type=text] {
-    display:none
-}
-
-ul li.editMode input[type=text] {
-    display:inline-block;
-    width:224px
-}
-
-ul li.editMode label {
-    display:none;
-}
+    color: #888;
+  }
+  
+  /* Edit Task */
+  .tasklist__input {
+    display: none;
+  }
+  
+  .tasklist__item-edit .tasklist__input {
+    display: inline-block;
+    width: 224px;
+  }
+  
+  .tasklist__item-edit .tasklist__label {
+    display: none;
+  }
