@@ -41,6 +41,9 @@ ul {
 li, h3 {
     list-style:none;
 }
+h4{
+    cursor:default;
+}
 input,button{
     outline:none;
 }
@@ -58,7 +61,7 @@ button:hover {
 }
 /* Heading */
 h3,
-label[for='new-task'] {
+h4[for='new-task'] {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -84,7 +87,7 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-label[for='new-task'] {
+h4[for='new-task'] {
     display: block;
     margin: 0 0 20px;
 }
@@ -109,7 +112,7 @@ li > * {
 li > input[type="checkbox"] {
     margin: 0 10px;
 }
-li > label {
+li > h4 {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
@@ -128,8 +131,8 @@ button.delete img:hover {
 }
 
 /* Completed */
-ul#completed-tasks label {
-    text-decoration: line-through
+ul#completed-tasks h4 {
+    text-decoration: line-through;
     color: #888;
 }
 
@@ -143,6 +146,6 @@ ul li.editMode input[type=text] {
     width:224px
 }
 
-ul li.editMode label {
+ul li.editMode h4 {
     display:none;
 }
