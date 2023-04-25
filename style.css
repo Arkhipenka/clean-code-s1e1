@@ -49,6 +49,18 @@
   .tasklist {
     margin: 0;
     padding: 0px;
+
+}
+li, h3 {
+    list-style:none;
+}
+h4{
+    cursor:default;
+}
+input,button{
+    outline:none;
+}
+button {
   }
   
   .tasklist__item {
@@ -69,6 +81,15 @@
     width: 60px;
     font-family: Lato, sans-serif;
     cursor: pointer;
+
+}
+button:hover {
+    color: #3a3A3a;
+}
+/* Heading */
+h3,
+h4[for='new-task'] {
+
   }
   
   .btn:hover {
@@ -77,6 +98,7 @@
   
   /* Heading */
   .main__header {
+
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -101,10 +123,21 @@
   
   .task:focus {
     color: #333;
+
+}
+
+/* New Task */
+h4[for='new-task'] {
+    display: block;
+    margin: 0 0 20px;
+}
+input#new-task {
+
   }
   
   /* New Task */
   .new-task__input {
+
     width: 318px;
   }
   
@@ -124,6 +157,10 @@
   
   .tasklist__checkbox {
     margin: 0 10px;
+
+}
+li > h4 {
+
   }
   
   .tasklist__label {
@@ -147,6 +184,29 @@
   
   .btn-img:hover {
     transform: rotateZ(0);
+
+}
+
+/* Completed */
+ul#completed-tasks h4 {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* Edit Task */
+ul li input[type=text] {
+    display:none
+}
+
+ul li.editMode input[type=text] {
+    display:inline-block;
+    width:224px
+}
+
+ul li.editMode h4 {
+    display:none;
+}
+
   }
   
   /* Completed */
@@ -168,3 +228,4 @@
   .tasklist__item-edit .tasklist__label {
     display: none;
   }
+
