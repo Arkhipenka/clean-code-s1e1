@@ -127,7 +127,9 @@
   }
   
   .tasklist__label {
+    margin: 0;
     padding-left: 10px;
+    font-weight: lighter;
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
