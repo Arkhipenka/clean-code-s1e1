@@ -21,9 +21,11 @@
 }
 
 @media (max-width: 768px) {
+
   .header {
     text-align: center;
   }
+  
 }
 
 .main {
@@ -39,10 +41,12 @@
   display: inline-block;
   flex-grow: 1;
 }
+
 .tasklist__label{
   margin: 0;
   font-weight: lighter;
 }
+
 .new-task__wrapper {
   padding-top: 20px;
   padding-bottom: 16px;
