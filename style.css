@@ -21,11 +21,12 @@ body {
 .header { text-align: center;
 }
 }
-.centered-main-page-element {
+.main {
     display: block;
     width: 500px;
     margin: 0 auto 0;
 }
+.task-list__label,
 .task {
     width: 56%;
     display: inline-block;
@@ -38,13 +39,15 @@ ul {
     margin:0;
     padding: 0px;
 }
-li, h3 {
+.tasklist__item  {
     list-style:none;
 }
-input,button{
+.task,
+.tasklist__checkbox,
+.btn{
     outline:none;
 }
-button {
+.btn {
     background: none;
     border: 0px;
     color: #888;
@@ -53,7 +56,7 @@ button {
     font-family: Lato, sans-serif;
     cursor: pointer;
 }
-button:hover {
+.btn:hover {
     color: #3a3A3a;
 }
 /* Heading */
