@@ -10,7 +10,7 @@ body {
     display: block;
     text-align: right;
 }
-.header_img {
+.header__img {
     width: 100%;
 }
 .header_link {
@@ -32,7 +32,7 @@ body {
     display: inline-block;
     flex-grow: 1
 }
-.task-row-wrapper {
+.new-task__wrapper {
     display: flex;
 }
 ul {
@@ -117,15 +117,15 @@ ul {
     font-size: 18px;
     width: 226px;
 }
-li >    input[type="text"] {
+.tasklist__input {
     width: 226px
 }
-button.delete img {
+.btn-img {
     height: 2em;
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
-button.delete img:hover {
+.btn-img:hover {
     transform: rotateZ(0);
 }
 
