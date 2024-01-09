@@ -19,7 +19,7 @@ body {
     font-family: fantasy, cursive;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
     .header {
         text-align: center;
     }
@@ -122,7 +122,7 @@ body {
   }
   
   .tasklist__item > * {
-    vertical-align:middle;
+    vertical-align: middle;
   }
   
   .tasklist__checkbox {
@@ -152,7 +152,7 @@ body {
   
   /* Completed */
   .main__complete-list .tasklist__label {
-    text-decoration:line-through;
+    text-decoration: line-through;
     color: #888;
   }
   
@@ -163,7 +163,7 @@ body {
   
   .tasklist__item-edit .tasklist__input {
     display: inline-block;
-    width: 224px;
+    width: 224px
   }
   
   .tasklist__item-edit .tasklist__label {
