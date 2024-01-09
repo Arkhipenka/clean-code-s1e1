@@ -163,7 +163,7 @@ body {
   
   .tasklist__item-edit .tasklist__input {
     display: inline-block;
-    width: 224px
+    width: 224px;
   }
   
   .tasklist__item-edit .tasklist__label {
