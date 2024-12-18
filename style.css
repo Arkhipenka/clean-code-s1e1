@@ -35,9 +35,7 @@ body {
 }
 .tasklist__label {
   margin: 0;
-  font-weight: lighter;
 }
-  
 .new-task__wrapper {
   padding-top: 20px;
   padding-bottom: 16px;
@@ -94,10 +92,10 @@ body {
 }
 
 /* New Task */
-.new-task__input  {
+/*.new-task__input  {
   display: block;
   margin: 0 0 20px;
-}
+}*/
 
 /* Task list */
 .tasklist__item {
