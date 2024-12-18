@@ -135,7 +135,7 @@ body {
 
 /* Completed */
 .main__complete-list .tasklist__label {
-    text-decoration: line-through
+    text-decoration: line-through;
     color: #888;
 }
 
