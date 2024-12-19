@@ -169,15 +169,15 @@
 /* Edit Task */
 .tasklist__input {
 
-  display:none;
+  display: none;
 }
 
 .tasklist__item-edit .tasklist__input {
-  display:inline-block;
-  width:224px;
+  display: inline-block;
+  width: 224px;
 }
 
 .tasklist__item-edit .tasklist__label {
-  display:none;
+  display: none;
 
 }
